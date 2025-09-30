@@ -5,10 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>F1 Excursion</title>
 
-  <!-- link to your CSS file (styles.css in same folder) -->
-  <link rel="stylesheet" href="styles.css" />
+  <!-- link to your CSS file -->
+  <link rel="stylesheet" href="resources/css/style.css">
 </head>
 <body>
+
+  <!-- Header -->
   <header class="site-header">
     <div class="container">
       <!-- left: brand / title -->
@@ -21,7 +23,41 @@
     </div>
   </header>
 
-  <!-- (rest of page content goes here) -->
+  <!-- Media Section -->
+  <section class="media-section">
+    <div class="container">
+
+      <!-- Responsive video -->
+      <div class="video-wrapper">
+        <video controls playsinline preload="metadata" poster="resources/images/landscape.jpg">
+          <source src="resources/videos/stock-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- Supporting text -->
+      <div class="supporting-text">
+        <h2>Experience the Excursion</h2>
+        <p>
+          Explore the world in style — short experiences, beautiful landscapes, and easy booking from your phone.
+          Watch the video above for a quick overview.
+        </p>
+      </div>
+
+      <!-- Centered landscape image -->
+      <p class="center-image">
+        <img src="resources/images/landscape.jpg" alt="Landscape view" />
+      </p>
+
+      <!-- Cellphone icon with dark background -->
+      <p class="center-image">
+        <span class="icon-bg" aria-hidden="true">
+          <img src="resources/images/cellphone.png" alt="Cellphone icon" />
+        </span>
+      </p>
+
+    </div>
+  </section>
 
 </body>
 </html>
