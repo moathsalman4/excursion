@@ -1,0 +1,48 @@
+/* Basic reset for the example */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* Header styles */
+.site-header {
+  background: #0b1220;      /* dark background */
+  color: #ffffff;
+  padding: 18px 0;
+  border-bottom: 4px solid rgba(255,255,255,0.03);
+}
+
+/* container centers content and sets spacing */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Brand/title */
+.brand {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+}
+
+/* CTA link (appears like a button) */
+.cta {
+  display: inline-block;
+  background: #ff4b4b;        /* accent / button color */
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: transform 0.12s ease, opacity 0.12s ease;
+}
+.cta:hover { transform: translateY(-2px); opacity: 0.95; }
+
+/* small screens: reduce padding and font sizes */
+@media (max-width: 520px) {
+  .brand { font-size: 1rem; }
+  .cta { padding: 8px 12px; font-size: 0.95rem; }
+}
